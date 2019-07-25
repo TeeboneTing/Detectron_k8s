@@ -12,7 +12,7 @@ Detectron is the object detection collection from Facebook Research. Original re
 * Build image: `make build`
 * If you would like to push to your dockerhub repository, please change your username in Makefile line 3 and `make push_dockerhub`
 * Run image by `docker run -ti teeboneding/detectron bash`
-* Example inference command from [GETTING_STARTED](https://github.com/TeeboneTing/Detectron/blob/master/GETTING_STARTED.md):
+* Execute example inference command inside container from [GETTING_STARTED](https://github.com/TeeboneTing/Detectron/blob/master/GETTING_STARTED.md):
 ``` bash
 python tools/infer_simple.py \
     --cfg configs/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml \
