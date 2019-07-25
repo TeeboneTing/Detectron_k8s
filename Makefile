@@ -1,6 +1,7 @@
 IMAGE_NAME=detectron
 DOCKER_FILE=Dockerfile
-DOCKERHUB_IMAGE=teeboneding/$(IMAGE_NAME)
+USERNAME=teeboneding
+DOCKERHUB_IMAGE=$(USERNAME)/$(IMAGE_NAME)
 
 all: build push_dockerhub
 
