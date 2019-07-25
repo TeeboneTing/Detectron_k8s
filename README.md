@@ -2,9 +2,11 @@
 Detectron is the object detection collection from Facebook Research. Original repo is [here](https://github.com/facebookresearch/Detectron). Since facebook research version could encounter some errors during parsing yaml file, I have fixed this issue by fixing pyyamml version in requirement.txt. [Related Issue](https://github.com/facebookresearch/Detectron/issues/840) In my repository I use [my forked version](https://github.com/TeeboneTing/Detectron) of Detectron and works well now.
 
 # How to use
+## Build image by yourself 
 * Clone this repository with submodule: `git clone --recursive git@github.com:TeeboneTing/Detectron_k8s.git`
 * Build image: `make build`
 * If you would like to push to your dockerhub repository, please change your username in Makefile line 3 and `make push_dockerhub`
+## Acutally you can run docker image without build by yourself
 * Run image by `docker run -ti teeboneding/detectron bash`
 * Execute example inference command inside container from [GETTING_STARTED](https://github.com/TeeboneTing/Detectron/blob/master/GETTING_STARTED.md):
 ``` bash
