@@ -1,9 +1,3 @@
-# Update
-* 20190725 First update
-
-# TODOs
-* add train flow kubernetes yaml template
-
 # Detectron
 Detectron is the object detection collection from Facebook Research. Original repo is [here](https://github.com/facebookresearch/Detectron). Since facebook research version could encounter some errors during parsing yaml file, I have fixed this issue by fixing pyyamml version in requirement.txt. [Related Issue](https://github.com/facebookresearch/Detectron/issues/840) In my repository I use [my forked version](https://github.com/TeeboneTing/Detectron) of Detectron and works well now.
 
@@ -30,3 +24,9 @@ python tools/infer_simple.py \
 ![korea fish 3](example/3.jpg)
 
 ![korea fish 4](example/4.jpg)
+
+# Update
+* 20190725 First update
+
+# TODOs
+* add train flow kubernetes yaml template
