@@ -27,3 +27,13 @@ RUN make
 
 # [Optional] Build custom ops
 #RUN make ops
+
+# Copy my config files to container
+ADD configs /detectron/new_configs
+
+# Train command
+CMD ln -s /tmp/detectron/coco /detectron/detectron/datasets/data/coco && \
+    python tools/train_net.py \
+    --cfg new_configs/getting_started/tutorial_1gpu_e2e_faster_rcnn_R-50-FPN.yaml \
+    OUTPUT_DIR /tmp/detectron-output
+
