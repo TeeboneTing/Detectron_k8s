@@ -30,7 +30,7 @@ ln -s /tmp/detectron/coco /detectron/detectron/datasets/data/coco ; \
 python tools/train_net.py --cfg new_configs/getting_started/retinanet_X-101-32x8d-FPN_1x.yaml OUTPUT_DIR /tmp/detectron/detectron/model
 ```
 ### Current Training Parameters
-ref: [retinanet_X-101-32x8d-FPN_1x.yaml]()
+ref: [retinanet_X-101-32x8d-FPN_1x.yaml](https://github.com/TeeboneTing/Detectron_k8s/blob/master/configs/getting_started/retinanet_X-101-32x8d-FPN_1x.yaml)
 ```
 MODEL:
   TYPE: retinanet
