@@ -100,3 +100,4 @@ DATA_LOADER:
 * 20190725 First update
 
 # TODOs
+* Using Kubernetes template to train/inference Detectron
