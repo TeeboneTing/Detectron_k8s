@@ -35,8 +35,8 @@ ref: [retinanet_X-101-32x8d-FPN_1x.yaml](https://github.com/TeeboneTing/Detectro
 MODEL:
   TYPE: retinanet
   CONV_BODY: FPN.add_fpn_ResNet101_conv5_body
-  NUM_CLASSES: 2
-NUM_GPUS: 1
+  NUM_CLASSES: 2 # Class number should be your dataset class number + 1 (for background class)
+NUM_GPUS: 1 # Change your GPU number here
 SOLVER:
   WEIGHT_DECAY: 0.0001
   LR_POLICY: steps_with_decay
